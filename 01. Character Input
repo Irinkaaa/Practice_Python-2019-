@@ -1,0 +1,13 @@
+name = str(input("What is your name, please?: "))
+age = int(input("And what is you age now, please?: "))
+current_year = 2019
+
+
+def calculate_year(year):
+    year_born = current_year - year
+    new_year = year_born + 100
+    return new_year
+
+
+result = str(calculate_year(age))
+print("Hey, " + name + ", you will turn 100 in " + result + ". HAHA!")
